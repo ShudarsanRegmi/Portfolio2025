@@ -12,7 +12,7 @@ import TechStack from "@/pages/TechStack";
 import Certifications from "@/pages/Certifications";
 import Experience from "@/pages/Experience";
 import Achievements from "@/pages/Achievements";
-// import Contact from "@/pages/Contact";
+import Contact from "@/pages/Contact";
 // import NotFound from "@/pages/not-found";
 
 function Router() {
@@ -28,7 +28,7 @@ function Router() {
         <Route path="/certifications" component={() => <PageTransition><Certifications /></PageTransition>} />
         <Route path="/experience" component={() => <PageTransition><Experience /></PageTransition>} />
         <Route path="/achievements" component={() => <PageTransition><Achievements /></PageTransition>} />
-        {/* <Route path="/contact" component={() => <PageTransition><Contact /></PageTransition>} /> */}
+        <Route path="/contact" component={() => <PageTransition><Contact /></PageTransition>} />
         {/* <Route component={NotFound} /> */}
       </Switch>
     </div>
