@@ -11,6 +11,15 @@ export default function Hero() {
     });
   };
 
+  const handleDownload = () => {
+    const link = document.createElement('a');
+    link.href = 'Resume.pdf';
+    link.download = 'Shudarsan-Regmi-Resume.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <section className="min-h-screen flex items-center justify-center px-6 relative overflow-hidden pt-24">
       {/* Animated Background */}
@@ -37,7 +46,7 @@ export default function Hero() {
           >
             <div className="profile-image w-full h-full">
               <motion.img
-                src="https://shudarsan.netlify.app/profile.jpeg"
+                src="profile.jpeg"
                 alt="Shudarsan Regmi - Profile"
                 className="w-full h-full object-cover rounded-full"
                 initial={{ scale: 1.2, opacity: 0 }}
@@ -216,7 +225,8 @@ export default function Hero() {
           </Link>
 
           <motion.button
-            whileHover={{ 
+            onClick={handleDownload}
+            whileHover={{
               scale: 1.05,
               boxShadow: "0 10px 20px rgba(0, 0, 0, 0.2)"
             }}
