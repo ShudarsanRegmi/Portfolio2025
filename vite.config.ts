@@ -15,6 +15,6 @@ export default defineConfig({
     outDir: "dist",
     emptyOutDir: true,
   },
-  base: "/portfolio2025/", // Change this to your GitHub repo name for GitHub Pages: "/your-repo-name/"
+  base: "/",
 });
 
