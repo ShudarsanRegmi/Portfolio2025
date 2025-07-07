@@ -112,7 +112,7 @@ export default function Hero() {
           transition={{ duration: 0.8, delay: 0.6, ease: "easeOut" }}
           className="text-5xl md:text-7xl lg:text-8xl font-bold mb-8 gradient-text relative"
         >
-          <span className="relative inline-block">
+          <span className="relative inline-block bg-gradient-to-r from-[var(--accent-blue)] to-[var(--accent-purple)] bg-clip-text text-transparent">
             Shudarsan Regmi
             <motion.div
               initial={{ width: 0 }}
