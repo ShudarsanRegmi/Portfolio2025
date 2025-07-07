@@ -7,7 +7,7 @@ const projects = [
     id: "sniffer",
     title: "Network Packet Sniffer",
     description: "Packet sniffer written in C with detailed protocol-level filtering and network analysis capabilities.",
-    image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400",
+    image: "/src/assets/packetsniffer1.png",
     tags: ["C", "Raw Sockets", "Network Protocols"],
     color: "text-[var(--accent-blue)]",
   },
@@ -15,8 +15,8 @@ const projects = [
     id: "classroom",
     title: "Classroom Management System",
     description: "MERN Stack Project for Classroom Management. Rich in features including subject-specific resource management, class real-time updates, and notices.",
-    image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400",
-    tags: ["React", "Node.js", "MongoDB", "Express"],
+    image: "/src/assets/classroom2.png",
+    tags: ["React", "Node.js", "MongoDB", "Express", "Cloudinary"],
     color: "text-[var(--accent-purple)]",
   },
   {
@@ -60,14 +60,7 @@ export default function Projects() {
               className="project-card glass-panel rounded-3xl p-8 cursor-pointer relative group"
               onClick={() => setSelectedProject(project.id)}
             >
-              <div className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <motion.div
-                  whileHover={{ scale: 1.1 }}
-                  className="w-8 h-8 bg-[var(--accent-blue)] rounded-full flex items-center justify-center"
-                >
-                  <span className="text-white text-sm font-bold">▶</span>
-                </motion.div>
-              </div>
+
               
               <img
                 src={project.image}

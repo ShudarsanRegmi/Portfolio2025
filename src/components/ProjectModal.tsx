@@ -1,17 +1,18 @@
 import { motion, AnimatePresence } from "framer-motion";
-import { X } from "lucide-react";
+import { X, Github } from "lucide-react";
 import { useEffect } from "react";
+// import packetSniffer1 from '/assets/packetsniffer1.png';
 
 const projectDetails = {
   sniffer: {
     title: "Network Packet Sniffer",
-    image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1200&h=600",
-    overview: "A comprehensive packet analysis tool built from scratch in C, designed to intercept and analyze network traffic at the protocol level. This project demonstrates deep understanding of network protocols and low-level programming.",
+    image: "/src/assets/packetsniffer1.png",
+    overview: "A comprehensive packet sniffer tool built from scratch in C, designed to intercept and analyze network traffic at the protocol level. This project demonstrates deep understanding of network protocols and low-level programming.",
     features: [
       "Real-time packet capture using raw sockets",
-      "Protocol-level filtering (TCP, UDP, ICMP)",
+      "Protocol-level filtering (TCP, UDP)",
       "Packet header analysis and decoding",
-      "Traffic statistics and visualization",
+      // "Traffic statistics and visualization",
       "Command-line interface with filtering options",
     ],
     tech: {
@@ -20,48 +21,48 @@ const projectDetails = {
       "Protocols": "TCP/UDP",
       "Platform": "Linux/Unix",
     },
+    github: "https://github.com/ShudarsanRegmi/packetSniffer",
   },
-  classroom: {
+  classroom : {
     title: "Classroom Management System",
-    image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1200&h=600",
-    overview: "A full-stack MERN application designed to streamline classroom management with real-time communication, file sharing, and comprehensive dashboards for both teachers and students.",
+    image: "/src/assets/classroom1.png",
+    overview: "A full-stack MERN application designed to simplify classroom operations through centralized communication, content sharing, attendance tracking, and role-based access control.",
     features: [
-      "Real-time messaging and notifications",
-      "File upload and sharing system",
-      "Subject-specific dashboards",
-      "Assignment submission and grading",
-      "Attendance tracking system",
-      "Role-based access control",
+      "Class announcements and notifications",
+      "Subject-wise material management",
+      "Auto attendance tracking system",
+      "Role-based access for students, CRs, and admins",
+      "Exam scheduling and event organization",
+      "PWA support for offline and mobile-friendly access"
     ],
     tech: {
-      "Frontend": "React + Tailwind CSS",
-      "Backend": "Node.js + Express",
-      "Database": "MongoDB",
+      Frontend: "React.js + Material UI + Tailwind CSS",
+      Backend: "Node.js + Express.js",
+      Database: "MongoDB",
+      Auth: "Firebase Authentication",
+      Storage: "Cloudinary",
+      Additional: "PWA, Docker"
     },
+    github: "https://github.com/ShudarsanRegmi/ClassMgmtSys"
   },
   ecommerce: {
     title: "Fashion E-Commerce Website",
-    image: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1200&h=600",
-    overview: "A comprehensive e-commerce platform featuring both user and admin functionality, with complete product catalog management, order processing, and analytics visualization.",
+    image: "https://images.unsplash.com/photo-1521334884684-d80222895322?auto=format&fit=crop&w=1200&h=600&q=80",
+    overview: "A fully functional fashion e-commerce platform built as part of an internship project. Features include product browsing, user authentication, shopping cart, order management, and admin-side analytics for sales and inventory.",
     features: [
-      "Product catalog with filtering by category, size, and price",
-      "Shopping cart with add, update, and remove functionality",
-      "Secure checkout and order management system",
-      "Admin inventory management (add, edit, delete products)",
-      "Order tracking and management for admins",
-      "Sales analytics with Matplotlib visualization",
-      "User authentication and profile management",
-      "Customer reviews and ratings system",
+      "User authentication and product browsing",
+      "Shopping cart and secure checkout",
+      "Admin dashboard with inventory management",
+      "Order tracking and sales analytics with Matplotlib"
     ],
     tech: {
-      "Backend": "Python + Flask",
-      "Frontend": "HTML/CSS + JavaScript",
-      "Database": "SQLite3 + SQLAlchemy",
-      "Analytics": "Matplotlib",
-      "Migration": "Flask-Migrate",
+      Frontend: "HTML, CSS, JavaScript",
+      Backend: "Python + Flask",
+      Database: "SQLite + SQLAlchemy",
+      Visualization: "Matplotlib"
     },
+    github: "https://github.com/ShudarsanRegmi/InfoSys-SpringBoard-Fashion-Ecommerce-Project"
   },
-
 };
 
 interface ProjectModalProps {
@@ -150,6 +151,20 @@ export function ProjectModal({ projectId, onClose }: ProjectModalProps) {
                 </div>
               </div>
             </div>
+
+            {project.github && (
+              <div className="pt-6 border-t border-border flex justify-end">
+                <a
+                  href={project.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 text-sm font-medium text-foreground hover:underline"
+                >
+                  <Github className="w-5 h-5" />
+                  View on GitHub
+                </a>
+              </div>
+            )}
           </div>
         </motion.div>
       </motion.div>
