@@ -1,4 +1,6 @@
-import { Switch, Route } from "wouter";
+import { Switch, Route, Router as WouterRouter } from "wouter";
+import { useHashLocation } from "wouter/use-hash-location";
+
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { ThemeProvider } from "@/components/ThemeProvider";
@@ -15,7 +17,7 @@ import Achievements from "@/pages/Achievements";
 import Contact from "@/pages/Contact";
 import NotFound from "@/pages/not-found";
 
-function Router() {
+function Routes() {
   return (
     <div className="min-h-screen relative">
       <AnimatedBackground />
@@ -30,7 +32,6 @@ function Router() {
         <Route path="/achievements" component={() => <PageTransition><Achievements /></PageTransition>} />
         <Route path="/contact" component={() => <PageTransition><Contact /></PageTransition>} />
         <Route component={NotFound} />
-
       </Switch>
     </div>
   );
@@ -41,7 +42,10 @@ function App() {
     <ThemeProvider>
       <TooltipProvider>
         <Toaster />
-        <Router />
+        {/* Wrap with Hash-based routing logic */}
+        <WouterRouter hook={useHashLocation}>
+          <Routes />
+        </WouterRouter>
       </TooltipProvider>
     </ThemeProvider>
   );
