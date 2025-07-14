@@ -3,6 +3,8 @@ import { useState } from "react";
 import { ProjectModal } from "@/components/ProjectModal";
 import packetSniffer1 from "@/assets/packetsniffer1.png";
 import classroom2 from "@/assets/classroom2.png";
+import vox1 from "@/assets/vox1_1.png";
+
 
 const projects = [
   {
@@ -29,6 +31,14 @@ const projects = [
     tags: ["Python", "Flask", "SQLite", "JavaScript"],
     color: "text-[var(--accent-blue)]",
   },
+  {
+    id: "voxtalkinux",
+    title: "VoxTalkinux",
+    description: "A minimal voice transcription utility for Linux, built around OpenAI Whisper. It provides a lightweight interface with systemd support and clipboard integration for seamless background transcription.",
+    image: vox1, // Replace with an actual image related to VoxTalkinux if available
+    tags: ["Python", "Whisper", "Voice-to-Text", "Linux", "Systemd"],
+    color: "text-[var(--accent-blue)]",
+  }  
 ];
 
 export default function Projects() {

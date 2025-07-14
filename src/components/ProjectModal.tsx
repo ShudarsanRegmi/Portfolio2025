@@ -3,6 +3,8 @@ import { X, Github } from "lucide-react";
 import { useEffect } from "react";
 import packetSniffer1 from '@/assets/packetsniffer1.png';
 import classroom1 from '@/assets/classroom1.png';
+import vox1 from "@/assets/vox1_1.png";
+
 
 const projectDetails = {
   sniffer: {
@@ -64,6 +66,26 @@ const projectDetails = {
     },
     github: "https://github.com/ShudarsanRegmi/InfoSys-SpringBoard-Fashion-Ecommerce-Project"
   },
+
+  voxtalkinux: {
+  title: "VoxTalkinux – Minimal Voice Transcription Utility",
+  image: vox1,
+  overview: "A lightweight voice transcription tool designed for Linux, built around OpenAI Whisper. It wraps Whisper into a streamlined interface with support for background execution (via systemd), clipboard integration (xclip), and quick access through a keyboard shortcut. Ideal for users seeking fast and offline transcription workflows.",
+  features: [
+    "Offline transcription using OpenAI Whisper",
+    "Systemd service for background listening",
+    "Clipboard integration with xclip",
+    "Triggerable via global keyboard shortcut",
+    "Adaptable to Windows with minor environment tweaks"
+  ],
+  tech: {
+    "Language": "Python",
+    "Speech-to-Text": "OpenAI Whisper",
+    "OS Integration": "Systemd, Xclip, Keyboard Shortcuts",
+    "Platform": "Linux (Desktop)"
+  },
+  github: "https://github.com/ShudarsanRegmi/voxtalkinux/"
+}
 };
 
 interface ProjectModalProps {
