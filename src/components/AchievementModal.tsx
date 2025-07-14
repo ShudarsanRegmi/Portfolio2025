@@ -1,6 +1,9 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { X, ChevronLeft, ChevronRight, ExternalLink, Trophy, Calendar, Star } from "lucide-react";
 import { useEffect, useState } from "react";
+import second_sem_img_1 from "@/assets/second_sem_rank1_1.jpeg";
+import second_sem_img_2 from "@/assets/second_sem_rank1_2.jpeg";
+import second_sem_img_3 from "@/assets/second_sem_rank1_3.jpeg";
 
 const achievementDetails = {
   semester1: {
@@ -24,9 +27,9 @@ const achievementDetails = {
       { name: "English Communication", grade: "A" }
     ],
     images: [
-      "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
-      "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
-      "https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600"
+      second_sem_img_1,
+      second_sem_img_2,
+      second_sem_img_3
     ],
     gpa: "8.7",
     recognition: "Merit Certificate for Top 3 Performance",
