@@ -1,13 +1,15 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { ProjectModal } from "@/components/ProjectModal";
+import packetSniffer1 from "@/assets/packetsniffer1.png";
+import classroom2 from "@/assets/classroom2.png";
 
 const projects = [
   {
     id: "sniffer",
     title: "Network Packet Sniffer",
     description: "Packet sniffer written in C with detailed protocol-level filtering and network analysis capabilities.",
-    image: "/src/assets/packetsniffer1.png",
+    image: packetSniffer1,
     tags: ["C", "Raw Sockets", "Network Protocols"],
     color: "text-[var(--accent-blue)]",
   },
@@ -15,7 +17,7 @@ const projects = [
     id: "classroom",
     title: "Classroom Management System",
     description: "MERN Stack Project for Classroom Management. Rich in features including subject-specific resource management, class real-time updates, and notices.",
-    image: "/src/assets/classroom2.png",
+    image: classroom2,
     tags: ["React", "Node.js", "MongoDB", "Express", "Cloudinary"],
     color: "text-[var(--accent-purple)]",
   },

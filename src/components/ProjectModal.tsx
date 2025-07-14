@@ -1,12 +1,13 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { X, Github } from "lucide-react";
 import { useEffect } from "react";
-// import packetSniffer1 from '/assets/packetsniffer1.png';
+import packetSniffer1 from '@/assets/packetsniffer1.png';
+import classroom1 from '@/assets/classroom1.png';
 
 const projectDetails = {
   sniffer: {
     title: "Network Packet Sniffer",
-    image: "/src/assets/packetsniffer1.png",
+    image: packetSniffer1,
     overview: "A comprehensive packet sniffer tool built from scratch in C, designed to intercept and analyze network traffic at the protocol level. This project demonstrates deep understanding of network protocols and low-level programming.",
     features: [
       "Real-time packet capture using raw sockets",
@@ -25,7 +26,7 @@ const projectDetails = {
   },
   classroom : {
     title: "Classroom Management System",
-    image: "/src/assets/classroom1.png",
+    image: classroom1,
     overview: "A full-stack MERN application designed to simplify classroom operations through centralized communication, content sharing, attendance tracking, and role-based access control.",
     features: [
       "Class announcements and notifications",
