@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Mail, Github, Linkedin, Download } from "lucide-react";
+import { Mail, Github, Linkedin, Youtube } from "lucide-react";
 import { useState } from "react";
 
 export default function Contact() {
@@ -12,13 +12,9 @@ export default function Contact() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     // TODO: Implement form submission logic
-    alert("Message sent! (This is a demo - form submission not implemented)");
+    alert("");
   };
 
-  const handleDownloadResume = () => {
-    // TODO: Implement resume download functionality
-    alert("Resume download initiated! (This is a demo - download not implemented)");
-  };
 
   return (
     <section className="min-h-screen px-6 py-20">
@@ -64,6 +60,14 @@ export default function Contact() {
                   title: "LinkedIn",
                   value: "@shudarsanregmi",
                   href: "https://www.linkedin.com/in/shudarsanregmi/",
+                  color: "text-[var(--accent-blue)]",
+                  bgColor: "bg-[var(--accent-blue)]/20",
+                },
+                {
+                  icon: Youtube,
+                  title: "Youtube",
+                  value: "@binaryeverest",
+                  href: "https://www.youtube.com/@binaryeverest",
                   color: "text-[var(--accent-blue)]",
                   bgColor: "bg-[var(--accent-blue)]/20",
                 },
@@ -159,23 +163,6 @@ export default function Contact() {
           </motion.div>
         </div>
 
-        {/* Download Resume Button */}
-        <motion.div
-          initial={{ opacity: 0, y: 50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 1, ease: "easeOut" }}
-          className="text-center mt-12"
-        >
-          <motion.button
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            onClick={handleDownloadResume}
-            className="glass-panel rounded-2xl px-8 py-4 text-lg font-medium hover:bg-[var(--accent-purple)]/20 transition-all duration-300"
-          >
-            <Download className="w-5 h-5 inline mr-2" />
-            Download Resume
-          </motion.button>
-        </motion.div>
       </div>
     </section>
   );
