@@ -3,6 +3,8 @@ import { ShieldCheck, Brain, ExternalLink } from "lucide-react";
 import { useState } from "react";
 import { CertificationModal } from "@/components/CertificationModal";
 
+
+
 const certifications = [
   {
     id: "redhat",

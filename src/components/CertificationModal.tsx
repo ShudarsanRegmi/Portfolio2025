@@ -1,16 +1,18 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { X, ExternalLink, Calendar, Award, BookOpen } from "lucide-react";
 import { useEffect } from "react";
+import rh124 from '@/assets/RH124.png';
+import rh134 from '@/assets/RH134.png'; 
 
 const certificationDetails = {
   redhat: {
     title: "Red Hat System Administration Training",
-    image: "https://images.unsplash.com/photo-1629654297299-c8506221ca97?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=600",
-    certificateImage: "https://images.unsplash.com/photo-1606277719404-9d5c96e57f43?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
+    image: rh124,
+    certificateImage: rh134,
     issuer: "Red Hat",
     issueDate: "March 2024",
-    validUntil: "March 2027",
-    credentialId: "RH-SA-2024-03-15789",
+    validUntil: "Lifetime",
+    credentialId: "N/A",
     overview: "Comprehensive training in Red Hat Enterprise Linux system administration, covering advanced security hardening, network configuration, and enterprise-level system management.",
     areasConvered: [
       "Linux System Administration",
