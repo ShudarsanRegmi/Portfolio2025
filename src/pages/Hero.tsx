@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { Github, Linkedin, Mail, Download, Code, Shield, ArrowDown, Sparkles } from "lucide-react";
 import { Link } from "wouter";
 import { AnimatedBackground } from "@/components/AnimatedBackground";
+import resume from '@/assets/Resume.pdf';
 
 export default function Hero() {
   const scrollToNext = () => {
@@ -13,7 +14,7 @@ export default function Hero() {
 
   const handleDownload = () => {
     const link = document.createElement('a');
-    link.href = 'Resume.pdf';
+    link.href = resume;
     link.download = 'Shudarsan-Regmi-Resume.pdf';
     document.body.appendChild(link);
     link.click();
