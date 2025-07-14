@@ -5,6 +5,13 @@ import second_sem_img_1 from "@/assets/second_sem_rank1_1.jpeg";
 import second_sem_img_2 from "@/assets/second_sem_rank1_2.jpeg";
 import second_sem_img_3 from "@/assets/second_sem_rank1_3.jpeg";
 
+import research_1_1 from "@/assets/research_1_1.png";
+import research_1_2 from "@/assets/research_1_2.png";
+
+
+import first_sem_img_1 from "@/assets/first_sem_rank_3_1.jpeg";
+
+
 const achievementDetails = {
   semester1: {
     title: "3rd Rank in 1st Semester",
@@ -13,25 +20,21 @@ const achievementDetails = {
     rank: "3rd Position",
     description: "Achieved 3rd position in first semester with strong performance in foundational computer science courses. This achievement marked the beginning of consistent academic excellence.",
     highlights: [
-      "Strong foundation in programming fundamentals",
-      "Excellent performance in mathematics and logic",
-      "Active participation in coding assignments",
-      "Consistent study habits and time management",
-      "Leadership in group projects and discussions"
+        "Strong foundation in programming fundamentals",
+        "Excellent performance in mathematics and logic",
+        "Active participation in coding assignments",
+        "Consistent study habits and time management",
     ],
     subjects: [
-      { name: "Programming Fundamentals", grade: "A" },
-      { name: "Mathematics I", grade: "A-" },
-      { name: "Computer Organization", grade: "A" },
-      { name: "Digital Logic", grade: "A-" },
-      { name: "English Communication", grade: "A" }
+      { name: "Principles of Engineering", grade: "A+" },
+      { name: "Linear Algebra", grade: "A+" },
+      { name: "Algorithmic Thinking & PS", grade: "A+" },
+      { name: "Computer Hardware", grade: "A" },
     ],
     images: [
-      second_sem_img_1,
-      second_sem_img_2,
-      second_sem_img_3
+      first_sem_img_1
     ],
-    gpa: "8.7",
+    gpa: "9.07",
     recognition: "Merit Certificate for Top 3 Performance",
     impact: "This achievement boosted confidence and set the foundation for future academic success. It demonstrated strong analytical skills and dedication to learning.",
     links: [
@@ -43,65 +46,99 @@ const achievementDetails = {
     subtitle: "Outstanding Academic Achievement",
     date: "Second Semester 2024", 
     rank: "1st Position",
-    description: "Secured 1st position in second semester with exceptional SGPA of 9.34. A wonderful semester with outstanding academic performance across all subjects.",
+    description: "Secured 1st position in second semester with exceptional SGPA of 9.35. A wonderful semester with outstanding academic performance across all subjects.",
     highlights: [
-      "Perfect attendance and active class participation",
       "Exceptional performance in advanced programming",
       "Leadership in technical projects and presentations",
       "Mentoring fellow students in difficult subjects",
       "Outstanding project submissions and practical work"
     ],
     subjects: [
-      { name: "Data Structures & Algorithms", grade: "A+" },
-      { name: "Object Oriented Programming", grade: "A+" },
-      { name: "Database Management", grade: "A" },
-      { name: "Computer Networks", grade: "A+" },
-      { name: "Software Engineering", grade: "A" }
+      { name: "Programming Lab", grade: "O" },
+      { name: "Engineering Physics", grade: "A+" },
+      { name: "Computer Architecture", grade: "A+" },
+      { name: "Computer Programming", grade: "A+" },
+      { name: "Cyber Security Essentials", grade: "A+" },
+      { name: "Number Theory", grade: "A+" },
     ],
     images: [
-      "https://images.unsplash.com/photo-1607705703571-c5a8695f18f6?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
-      "https://images.unsplash.com/photo-1581287053822-fd7bf4f4bfec?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
-      "https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600"
+      second_sem_img_1,
+      second_sem_img_2,
+      second_sem_img_3
     ],
-    gpa: "9.34",
+    gpa: "9.35",
     recognition: "Dean's List Recognition & Gold Medal",
     impact: "This achievement demonstrated mastery of advanced concepts and established leadership within the academic community. The high SGPA reflected deep understanding and consistent excellence.",
     links: [
-      { title: "Dean's List Certificate", url: "#" },
-      { title: "Academic Transcript", url: "#" }
+      { title: "Certificate", url: "#" },
     ]
   },
+//   research: {
+//     title: "Research Publication",
+//     subtitle: "Cybersecurity & Application Development",
+//     date: "2024",
+//     rank: "Co-author",
+//     description: "Co-authored a research paper focusing on cybersecurity and modern application development practices. The research explores security vulnerabilities in contemporary web applications.",
+//     highlights: [
+//       "In-depth analysis of web application security",
+//       "Novel approaches to vulnerability assessment",
+//       "Practical implementation of security measures",
+//       "Collaboration with industry experts",
+//       "Peer review and academic validation"
+//     ],
+//     subjects: [
+//       { name: "Research Area", grade: "Cybersecurity" },
+//       { name: "Focus", grade: "Web Applications" },
+//       { name: "Methodology", grade: "Empirical Analysis" },
+//       { name: "Impact Factor", grade: "High" }
+//     ],
+//     images: [
+//       research_1_1,
+//       research_1_2
+//     ],
+//     gpa: "Published",
+//     recognition: "Academic Research Publication",
+//     impact: "This publication contributes to the cybersecurity community and demonstrates research capabilities beyond coursework. It establishes credibility in the field and opens doors for future research opportunities.",
+//     links: [
+//       { title: "Research Paper", url: "#" },
+//       { title: "Conference Proceedings", url: "#" }
+//     ]
+//   }
+
   research: {
     title: "Research Publication",
-    subtitle: "Cybersecurity & Application Development",
+    subtitle: "Automatic Detection of Leaf Diseases in Hibiscus Plants",
     date: "2024",
     rank: "Co-author",
-    description: "Co-authored a research paper focusing on cybersecurity and modern application development practices. The research explores security vulnerabilities in contemporary web applications.",
+    description: "Co-authored a research paper focusing on automatic detection of leaf diseases in hibiscus plants using deep-learning strategies.",
     highlights: [
-      "In-depth analysis of web application security",
-      "Novel approaches to vulnerability assessment",
-      "Practical implementation of security measures",
-      "Collaboration with industry experts",
-      "Peer review and academic validation"
+      "Deep learning-based early detection of hibiscus plant diseases using CNNs",
+      "Integration of Transfer Learning for robust performance on limited datasets",
+      "User-friendly, real-time diagnostic system tailored for farmers and agronomists",
+      "Non-invasive image analysis approach adaptable to multiple crops and diseases",
+      "High-accuracy model ensuring sustainable cultivation with reduced pesticide use"
     ],
     subjects: [
-      { name: "Research Area", grade: "Cybersecurity" },
-      { name: "Focus", grade: "Web Applications" },
-      { name: "Methodology", grade: "Empirical Analysis" },
-      { name: "Impact Factor", grade: "High" }
+      { name: "Research Area", grade: "Agricultural Technology" },
+      { name: "Focus", grade: "Early Disease Detection" },
+      { name: "Methodology", grade: "Empirical Analysis using CNN and Transfer Learning" },
+      // { name: "Impact Factor", grade: "High – Enhances Precision Agriculture and Sustainable Farming" }
     ],
     images: [
-      "https://images.unsplash.com/photo-1532153955177-f59af40d6472?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
-      "https://images.unsplash.com/photo-1588196749597-9ff075ee6b5b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600"
+      research_1_1,
+      research_1_2
     ],
     gpa: "Published",
     recognition: "Academic Research Publication",
-    impact: "This publication contributes to the cybersecurity community and demonstrates research capabilities beyond coursework. It establishes credibility in the field and opens doors for future research opportunities.",
+    impact: "This publication contributes to the agricultural technology domain by applying cutting-edge deep learning techniques to real-world farming problems. It showcases innovation in plant disease diagnostics, strengthens credibility in precision agriculture research, and opens pathways for interdisciplinary advancements and future deployments across diverse crop systems.",
     links: [
-      { title: "Research Paper", url: "#" },
-      { title: "Conference Proceedings", url: "#" }
+      { title: "Research Paper", url: "https://ieeexplore.ieee.org/document/10803253" },
+      { title: "Conference Proceedings", url: "https://ieeexplore.ieee.org/xpl/conhome/10803100/proceeding" }
     ]
   }
+
+
+
 };
 
 interface AchievementModalProps {
