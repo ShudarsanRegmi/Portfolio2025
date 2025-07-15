@@ -1,5 +1,7 @@
 import { motion } from "framer-motion";
-import { Code, Shield, Coffee, Mountain, Star, Zap, Users, Heart } from "lucide-react";
+import { Code, Shield, Coffee, Mountain, Star, Zap, Users, Heart, Server } from "lucide-react";
+import { Dribbble, Video, Music2, Globe, BookOpen, Activity } from 'lucide-react';
+
 
 export default function About() {
   return (
@@ -91,10 +93,13 @@ export default function About() {
               <h3 className="text-2xl font-semibold mb-6">Fun Facts</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 {[
-                  { icon: Star, text: "Featured on a tech blog!", color: "text-yellow-400" },
-                  { icon: Coffee, text: "Coffee enthusiast & brew explorer", color: "text-amber-400" },
-                  { icon: Mountain, text: "Hiking & outdoor adventures", color: "text-green-400" },
-                  { icon: Heart, text: "Passionate about clean code", color: "text-red-400" }
+                    { icon: Dribbble, text: "Loves to play cricket", color: "text-lime-500" },
+                    { icon: Video, text: "Pursuing content creation on YouTube", color: "text-rose-500" },
+                    { icon: Music2, text: "Enjoys listening to music", color: "text-indigo-400" },
+                    { icon: Globe, text: "Enjoys learning new languages", color: "text-sky-500" },
+                    { icon: BookOpen, text: "Enjoys reading self-help and personal growth books", color: "text-amber-500" },
+
+                  
                 ].map((fact, index) => (
                   <motion.div
                     key={index}
@@ -123,6 +128,7 @@ export default function About() {
                   { name: "Frontend Development", level: 90, icon: Code, color: "var(--accent-blue)" },
                   { name: "Backend Development", level: 85, icon: Zap, color: "var(--accent-purple)" },
                   { name: "Cybersecurity", level: 75, icon: Shield, color: "#10b981" },
+                  { name: "System Administration / Cloud Computing", level: 75, icon: Server, color: "#3b82f6" },
                   { name: "Team Collaboration", level: 80, icon: Users, color: "#f59e0b" }
                 ].map((skill, index) => (
                   <motion.div
@@ -157,19 +163,35 @@ export default function About() {
               transition={{ duration: 0.8, delay: 0.7, ease: "easeOut" }}
               className="pt-8"
             >
-              <h3 className="text-2xl font-semibold mb-4">Milestones</h3>
+              <h3 className="text-2xl font-semibold mb-4">Timeline</h3>
               <ol className="border-l-2 border-primary pl-6">
                 <li className="mb-10 ml-4">
                   <div className="absolute w-3 h-3 bg-primary rounded-full mt-1.5 -left-1.5 border border-white"></div>
                   <time className="mb-1 text-sm font-normal leading-none text-secondary-text">2023</time>
-                  <h4 className="text-lg font-semibold">Graduated from University</h4>
-                  <p className="text-base font-normal text-secondary-text">Earned my Bachelor's degree in Computer Science.</p>
+                  <h4 className="text-lg font-semibold">Graduated from Higher Secondary School</h4>
+                  <p className="text-base font-normal text-secondary-text">Achieved a 3.72 GPA, reflecting solid academic performance in the Science stream + Computer Science
+
+</p>
                 </li>
                 <li className="mb-10 ml-4">
                   <div className="absolute w-3 h-3 bg-primary rounded-full mt-1.5 -left-1.5 border border-white"></div>
-                  <time className="mb-1 text-sm font-normal leading-none text-secondary-text">2024</time>
-                  <h4 className="text-lg font-semibold">Joined First Startup</h4>
-                  <p className="text-base font-normal text-secondary-text">Contributed to developing cutting-edge web applications.</p>
+                  <time className="mb-1 text-sm font-normal leading-none text-secondary-text">2021</time>
+                  <h4 className="text-lg font-semibold">Graduated from Secondary School
+                  </h4>
+                  <p className="text-base font-normal text-secondary-text">Achieved a perfect 4.0 GPA, demonstrating strong academic performance in Grade 10
+
+</p>
+                </li>
+
+                <li className="mb-10 ml-4">
+                  <div className="absolute w-3 h-3 bg-primary rounded-full mt-1.5 -left-1.5 border border-white"></div>
+                  <time className="mb-1 text-sm font-normal leading-none text-secondary-text">Pursuing</time>
+                  <h4 className="text-lg font-semibold">Joined B-Tech - CyberSecurity
+                  </h4>
+                  <p className="text-base font-normal text-secondary-text">Currently maintaining a CGPA of 9.01, demonstrating strong academic performance in B.Tech – Cybersecurity
+
+
+</p>
                 </li>
               </ol>
             </motion.div>
