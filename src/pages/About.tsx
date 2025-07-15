@@ -165,6 +165,16 @@ export default function About() {
             >
               <h3 className="text-2xl font-semibold mb-4">Timeline</h3>
               <ol className="border-l-2 border-primary pl-6">
+              <li className="mb-10 ml-4">
+                  <div className="absolute w-3 h-3 bg-primary rounded-full mt-1.5 -left-1.5 border border-white"></div>
+                  <time className="mb-1 text-sm font-normal leading-none text-secondary-text">Pursuing</time>
+                  <h4 className="text-lg font-semibold">Joined B-Tech - CyberSecurity
+                  </h4>
+                  <p className="text-base font-normal text-secondary-text">Currently maintaining a CGPA of 9.01, demonstrating strong academic performance in B.Tech – Cybersecurity
+
+
+</p>
+                </li>
                 <li className="mb-10 ml-4">
                   <div className="absolute w-3 h-3 bg-primary rounded-full mt-1.5 -left-1.5 border border-white"></div>
                   <time className="mb-1 text-sm font-normal leading-none text-secondary-text">2023</time>
@@ -179,17 +189,6 @@ export default function About() {
                   <h4 className="text-lg font-semibold">Graduated from Secondary School
                   </h4>
                   <p className="text-base font-normal text-secondary-text">Achieved a perfect 4.0 GPA, demonstrating strong academic performance in Grade 10
-
-</p>
-                </li>
-
-                <li className="mb-10 ml-4">
-                  <div className="absolute w-3 h-3 bg-primary rounded-full mt-1.5 -left-1.5 border border-white"></div>
-                  <time className="mb-1 text-sm font-normal leading-none text-secondary-text">Pursuing</time>
-                  <h4 className="text-lg font-semibold">Joined B-Tech - CyberSecurity
-                  </h4>
-                  <p className="text-base font-normal text-secondary-text">Currently maintaining a CGPA of 9.01, demonstrating strong academic performance in B.Tech – Cybersecurity
-
 
 </p>
                 </li>
