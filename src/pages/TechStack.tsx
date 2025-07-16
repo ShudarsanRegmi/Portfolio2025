@@ -305,3 +305,33 @@ export default function TechStack() {
     </section>
   );
 }
+
+
+// Security Tools
+
+/*
+Burpsuite, netcat, Wireshark, Nmap, Metasploit, sqlmap, Nikto, John the Ripper, Ghidra, Radare2
+*/
+
+/*
+AI:
+ChatGPT, Copilot, Codeium, Tabnine, Replit AI, OpenAI Codex, DeepCode
+Cloud Platforms: Azure, AWS, Vercel, Firebase
+*/
+
+
+/*
+Machine Learning: sikit-learn, TensorFlow, Keras, Hugging Face
+*/
+
+
+// Database Technologies
+/*
+MongoDB, MySQL, PostgreSQL, SQLite, Firebase Realtime Database
+*/
+
+// DevOps Tools
+/*
+Github Actions, Docker
+*/
+
